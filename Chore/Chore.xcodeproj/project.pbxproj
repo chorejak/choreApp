@@ -16,6 +16,9 @@
 		1E56789620F92AFF00B1FB43 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E56789520F92AFF00B1FB43 /* main.m */; };
 		1E5678A020F92AFF00B1FB43 /* ChoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E56789F20F92AFF00B1FB43 /* ChoreTests.m */; };
 		1E5678AB20F92AFF00B1FB43 /* ChoreUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5678AA20F92AFF00B1FB43 /* ChoreUITests.m */; };
+		1EDE4CD020FD163B005B4FA8 /* Chore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE4CCF20FD163B005B4FA8 /* Chore.m */; };
+		1EDE4CD320FD16FE005B4FA8 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE4CD220FD16FE005B4FA8 /* User.m */; };
+		1EDE4CD620FD17FC005B4FA8 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDE4CD520FD17FC005B4FA8 /* Group.m */; };
 		623D5F72EA10C9BAE5EDCAA3 /* Pods_ChoreUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 671158EEA6F2AA271493426A /* Pods_ChoreUITests.framework */; };
 		DACF7AC377B3D66A35490A53 /* Pods_Chore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB73FF311802522F75A51F94 /* Pods_Chore.framework */; };
 /* End PBXBuildFile section */
@@ -55,6 +58,12 @@
 		1E5678A620F92AFF00B1FB43 /* ChoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E5678AA20F92AFF00B1FB43 /* ChoreUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChoreUITests.m; sourceTree = "<group>"; };
 		1E5678AC20F92AFF00B1FB43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EDE4CCE20FD163B005B4FA8 /* Chore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Chore.h; sourceTree = "<group>"; };
+		1EDE4CCF20FD163B005B4FA8 /* Chore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Chore.m; sourceTree = "<group>"; };
+		1EDE4CD120FD16FE005B4FA8 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		1EDE4CD220FD16FE005B4FA8 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		1EDE4CD420FD17FC005B4FA8 /* Group.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		1EDE4CD520FD17FC005B4FA8 /* Group.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
 		59AE877B55D40D1EDFC9C747 /* Pods-ChoreUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChoreUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChoreUITests/Pods-ChoreUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		671158EEA6F2AA271493426A /* Pods_ChoreUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChoreUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90764C97925B5909C60B96AD /* Pods_ChoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +127,7 @@
 		1E56788520F92AFF00B1FB43 /* Chore */ = {
 			isa = PBXGroup;
 			children = (
+				1EDE4CCD20FD15BE005B4FA8 /* Models */,
 				1E56788620F92AFF00B1FB43 /* AppDelegate.h */,
 				1E56788720F92AFF00B1FB43 /* AppDelegate.m */,
 				1E56788920F92AFF00B1FB43 /* ViewController.h */,
@@ -147,6 +157,19 @@
 				1E5678AC20F92AFF00B1FB43 /* Info.plist */,
 			);
 			path = ChoreUITests;
+			sourceTree = "<group>";
+		};
+		1EDE4CCD20FD15BE005B4FA8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1EDE4CCE20FD163B005B4FA8 /* Chore.h */,
+				1EDE4CCF20FD163B005B4FA8 /* Chore.m */,
+				1EDE4CD120FD16FE005B4FA8 /* User.h */,
+				1EDE4CD220FD16FE005B4FA8 /* User.m */,
+				1EDE4CD420FD17FC005B4FA8 /* Group.h */,
+				1EDE4CD520FD17FC005B4FA8 /* Group.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		8238C752AC07DB7EED206DF1 /* Pods */ = {
@@ -387,9 +410,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EDE4CD320FD16FE005B4FA8 /* User.m in Sources */,
 				1E56788B20F92AFF00B1FB43 /* ViewController.m in Sources */,
 				1E56789620F92AFF00B1FB43 /* main.m in Sources */,
+				1EDE4CD620FD17FC005B4FA8 /* Group.m in Sources */,
 				1E56788820F92AFF00B1FB43 /* AppDelegate.m in Sources */,
+				1EDE4CD020FD163B005B4FA8 /* Chore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
