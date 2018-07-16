@@ -7,7 +7,7 @@ target 'Chore' do
 
   # Pods for Chore
 
-	pod 'CircleProgressBar', '~> 0.32’
+pod 'CircleProgressBar', '~> 0.32’
 	pod 'Parse'
 	pod 'ParseUI'
 
