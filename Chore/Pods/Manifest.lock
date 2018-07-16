@@ -1,0 +1,16 @@
+PODS:
+  - CircleProgressBar (0.32)
+
+DEPENDENCIES:
+  - CircleProgressBar (~> 0.32)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CircleProgressBar
+
+SPEC CHECKSUMS:
+  CircleProgressBar: 3920079be5224b62b3d9ed6eeb23ac01c835b681
+
+PODFILE CHECKSUM: 3951b7119fe915a000efb6efb5573e6c082d6cbe
+
+COCOAPODS: 1.5.3
